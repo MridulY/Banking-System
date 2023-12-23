@@ -1,0 +1,55 @@
+<form action="/customers/add" method="post">
+    <div class="modal fade" id="addCustomerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="addCustomerModalLabel">Add a New Customer:</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+  
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="name" class="fw-bold">Customer Name:</label>
+              <input type="text" name="name" class="form-control mt-3" placeholder="Customer Name" required />
+            </div>
+            <div class="form-group">
+              <label for="dob" class="fw-bold">Date of Birth:</label>
+              <input type="date" name="dob" class="form-control mt-3" required />
+            </div>
+            <div class="form-group">
+              <label for="gender" class="fw-bold">Gender:</label>
+              <select name="gender" class="form-control mt-3" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="address" class="fw-bold">Address:</label>
+              <input type="text" name="address" class="form-control mt-3" placeholder="Address" />
+            </div>
+            <div class="form-group">
+              <label for="email" class="fw-bold">Email Address:</label>
+              <input type="email" name="email" class="form-control mt-3" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="fw-bold">Phone Number:</label>
+              <input type="tel" name="phone" class="form-control mt-3" placeholder="Phone Number" required />
+            </div>
+            <div class="form-group">
+              <label for="imgUrl" class="fw-bold">Image URL:</label>
+              <input type="text" name="imgUrl" class="form-control mt-3" placeholder="Image URL" required />
+            </div>
+          </div>
+  
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+            <div class="form-group">
+              <input type="submit" name="submit" class="btn btn-md btn-success" value="Add Customer" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  
